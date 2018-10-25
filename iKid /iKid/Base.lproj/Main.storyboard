@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nerdy-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="NerdyViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="What did the computer say to the human when he couldn't complete his iOS HW?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="16" y="189.5" width="343" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="288" id="Sfl-Mc-4JY"/>
+                                    <constraint firstAttribute="width" constant="343" id="upl-zK-0ow"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODV-GG-T4h">
+                                <rect key="frame" x="292" y="556" width="58" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nerdButn:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="IZF-73-Hx4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="254" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMa-s0-bra">
+                                <rect key="frame" x="36" y="263" width="303" height="141"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="ODV-GG-T4h" secondAttribute="bottom" constant="18" id="8eH-fx-LBn"/>
+                            <constraint firstItem="hMa-s0-bra" firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="CMG-WC-czx"/>
+                            <constraint firstItem="hMa-s0-bra" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="au1-jD-LmX"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="ODV-GG-T4h" secondAttribute="trailing" constant="25" id="sUp-UE-IiJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Nerdy" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="imageView" destination="hMa-s0-bra" id="INL-JW-gI0"/>
+                        <outlet property="jokeAns" destination="zEq-FU-wV5" id="yGZ-HW-5zg"/>
+                        <outlet property="nerdView" destination="QS5-Rx-YEW" id="VK4-fm-amM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935.98200899550227" y="356"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="btF-aH-UzW" kind="relationship" relationship="viewControllers" id="4oc-b2-6le"/>
+                        <segue destination="aSP-zN-7Id" kind="relationship" relationship="viewControllers" id="MHe-GS-KZE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Knock-Knock-->
+        <scene sceneID="7nl-p2-9Lr">
+            <objects>
+                <viewController id="btF-aH-UzW" customClass="KnockViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kRn-vK-lCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Knock Knock" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZS-JM-3RV">
+                                <rect key="frame" x="16" y="189.5" width="343" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="6l8-lM-acM"/>
+                                    <constraint firstAttribute="height" constant="288" id="c0h-M0-Lvs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DM-VC-tsp">
+                                <rect key="frame" x="271" y="537" width="79" height="63"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="knockButn:" destination="btF-aH-UzW" eventType="touchUpInside" id="neB-OG-RWm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UOa-vr-5lD" firstAttribute="trailing" secondItem="1DM-VC-tsp" secondAttribute="trailing" constant="25" id="5bh-np-O6d"/>
+                            <constraint firstItem="UOa-vr-5lD" firstAttribute="bottom" secondItem="1DM-VC-tsp" secondAttribute="bottom" constant="18" id="IIs-lv-IBv"/>
+                            <constraint firstAttribute="centerY" secondItem="SZS-JM-3RV" secondAttribute="centerY" id="gvK-6P-YtH"/>
+                            <constraint firstAttribute="centerX" secondItem="SZS-JM-3RV" secondAttribute="centerX" id="sMy-vp-W57"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UOa-vr-5lD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock-Knock" image="second" id="TFQ-wH-lXy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="jokeAns" destination="SZS-JM-3RV" id="tUR-qA-DcU"/>
+                        <outlet property="knockView" destination="kRn-vK-lCg" id="lga-6a-bd8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ae0-mS-kTh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="840.62968515742136"/>
+        </scene>
+        <!--Punny-->
+        <scene sceneID="f4n-Mx-8B4">
+            <objects>
+                <viewController id="aSP-zN-7Id" customClass="PunnyViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Qq-fI-Nqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="What do you call a line of rabbits marching backwards?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pel-fJ-wUj">
+                                <rect key="frame" x="16" y="152" width="343" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="cNN-CQ-xVf"/>
+                                    <constraint firstAttribute="width" constant="343" id="vjs-bZ-3QI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-g4-Bbc">
+                                <rect key="frame" x="292" y="556" width="58" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="punButn:" destination="aSP-zN-7Id" eventType="touchUpInside" id="PHG-LZ-w2Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="btl-aY-WrK" firstAttribute="bottom" secondItem="BDE-g4-Bbc" secondAttribute="bottom" constant="18" id="Ph9-Lo-huz"/>
+                            <constraint firstAttribute="centerY" secondItem="pel-fJ-wUj" secondAttribute="centerY" id="RAc-DF-SQn"/>
+                            <constraint firstAttribute="centerX" secondItem="pel-fJ-wUj" secondAttribute="centerX" id="nme-pi-FbP"/>
+                            <constraint firstItem="btl-aY-WrK" firstAttribute="trailing" secondItem="BDE-g4-Bbc" secondAttribute="trailing" constant="25" id="wHc-DX-vlY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="btl-aY-WrK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Punny" image="second" id="1uX-bS-dof"/>
+                    <connections>
+                        <outlet property="jokeAns" destination="pel-fJ-wUj" id="7fJ-CR-qBB"/>
+                        <outlet property="punView" destination="1Qq-fI-Nqs" id="y3E-O2-ppT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgu-2U-YtI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="-357.57121439280365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
